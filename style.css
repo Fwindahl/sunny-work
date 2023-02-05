@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;600;800;900&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bg {
+  background-image: url(./images/desktop/image-header.jpg);
+  background-size: cover;
+  font-family: "Fraunces", serif;
+  font-family: "Barlow", sans-serif;
+  height: 100vh;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+}
+.navbar h2 {
+  color: white;
+  font-size: 32px;
+}
+.link-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.link-container a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+
+#contact {
+  padding: 15px 35px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+#contact:hover {
+  background-color: #3ebfff;
+  color: white;
+  border: 1px solid white;
+}
+.ladningpage {
+  display: flex;
+  height: 60vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ladningpage h1 {
+  text-align: center;
+  letter-spacing: 10px;
+  font-size: 72px;
+  color: white;
+  max-width: 1200px;
+  font-family: "Fraunces", serif;
+
+  padding: 0px 30px;
+  text-transform: uppercase;
+}
+#arrow-down {
+  animation: myAnim ease 1.5s infinite normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+
+  50% {
+    animation-timing-function: ease-in;
+    transform: translateY(-28px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+}
+.grid-container {
+  display: grid;
+  min-height: 100vh;
+  width: 100vw;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.item {
+  height: 100%;
+  width: 100%;
+}
+.bl {
+  background-image: url(./images/desktop/image-graphic-design.jpg);
+  background-size: contain;
+}
+.br {
+  background-image: url(./images/desktop/image-photography.jpg);
+  background-size: contain;
+}
+.flex-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 450px;
+  margin: 0 auto;
+  gap: 40px;
+}
+.flex-content h2 {
+  color: hsl(212, 27%, 19%);
+  font-size: 42px;
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+}
+.flex-content p {
+  font-weight: 400;
+  font-size: 18px;
+  color: hsl(232, 10%, 55%);
+  font-family: "Barlow", sans-serif;
+  line-height: 28px;
+}
+.flex-content a {
+  max-width: 131px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  color: hsl(212, 27%, 19%);
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+  background: linear-gradient(
+    to top,
+    hsla(51, 100%, 67%, 0.557) 0%,
+    hsl(0, 0%, 100%) 60%
+  );
+}
+.flex-content a:hover {
+  background: linear-gradient(
+    to top,
+    hsla(51, 100%, 67%, 1) 0%,
+    hsl(0, 0%, 100%) 60%
+  );
+}
+.flex-content .mr {
+  background: linear-gradient(
+    to top,
+    hsl(7, 100%, 67%, 0.557) 0%,
+    hsl(0, 0%, 100%) 60%
+  );
+}
+.flex-content .mr:hover {
+  background: linear-gradient(
+    to top,
+    hsl(7, 100%, 67%, 1) 0%,
+    hsl(0, 0%, 100%) 60%
+  );
+}
+.filler {
+  height: 50%;
+}
+.bottom-container {
+  display: flex;
+  height: 50%;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  color: hsl(167, 40%, 24%);
+  max-width: 380px;
+  text-align: center;
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+}
+.bottom-container h3 {
+  font-size: 32px;
+}
+.bottom-container p {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.h3-container {
+  display: flex;
+  justify-content: center;
+  min-height: 200px;
+  align-items: center;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsl(210, 4%, 67%);
+}
+.client-testi-container {
+  font-family: "Barlow", sans-serif;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.client-text {
+  text-align: center;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  line-height: 27px;
+}
+
+.client-text img {
+  width: 60px;
+  border-radius: 100px;
+}
+.job-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.job-container p {
+  color: hsl(210, 4%, 67%);
+  font-size: 14px;
+}
+.job-container h4 {
+  font-family: "Fraunces", serif;
+  color: black;
+}
+.bottom-grid {
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.item-bottom {
+  height: 100%;
+  width: 100%;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 300px;
+  background-color: hsl(169, 36%, 62%);
+  gap: 30px;
+  color: hsl(167, 40%, 24%);
+}
+.footer h1 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+}
+.three-links {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 50px;
+}
+.three-links a {
+  text-decoration: none;
+  color: hsl(167, 40%, 24%);
+  font-family: "Barlow", sans-serif;
+}
+.icon-container {
+  display: flex;
+  gap: 20px;
+}
+a:hover {
+  animation: aHover 1s ease 0s 1 normal forwards;
+}
+@keyframes aHover {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
